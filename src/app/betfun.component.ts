@@ -11,7 +11,7 @@ import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
-  {path: '/login', component: LoginComponent}
+  {path:'/', component: LoginComponent}
 ])
 export class BetfunAppComponent {
   title = 'betfun works!';
