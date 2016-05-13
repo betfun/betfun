@@ -14,5 +14,5 @@ import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
   {path:'/', component: LoginComponent}
 ])
 export class BetfunAppComponent {
-  title = 'betfun works!';
+  title = 'betfun works for real!';
 }
