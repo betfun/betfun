@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginComponent } from './+login';
-import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+import { WelcomeComponent } from './welcome';
 
 @Component({
   moduleId: module.id,
@@ -11,7 +12,9 @@ import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
-  {path:'/', component: LoginComponent}
+  { path: '/', component: WelcomeComponent },
+  { path: '/login', component: LoginComponent },
+  { path: '/welcome', component: WelcomeComponent }
 ])
 export class BetfunAppComponent {
   title = 'betfun works for real!';
