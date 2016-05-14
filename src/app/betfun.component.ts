@@ -17,5 +17,5 @@ import { WelcomeComponent } from './welcome';
   { path: '/welcome', component: WelcomeComponent }
 ])
 export class BetfunAppComponent {
-  title = 'betfun works for real!';
+  title = 'betfun works for the second time!';
 }
