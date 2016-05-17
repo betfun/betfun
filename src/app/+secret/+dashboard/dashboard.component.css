@@ -1,0 +1,14 @@
+md-card {
+    box-sizing: border-box;
+    margin: 16px;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.table {
+    width: 100%;
+    border: 1;
+}

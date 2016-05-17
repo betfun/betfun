@@ -9,25 +9,25 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { WelcomeComponent } from './welcome.component';
+import { SecretComponent } from './secret.component';
 
-describe('Component: Welcome', () => {
+describe('Component: Secret', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [WelcomeComponent]);
+  beforeEachProviders(() => [SecretComponent]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([WelcomeComponent],
-      (component: WelcomeComponent) => {
+  it('should inject the component', inject([SecretComponent],
+      (component: SecretComponent) => {
     expect(component).toBeTruthy();
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(WelcomeComponentTestController)
+    return builder.createAsync(SecretComponentTestController)
       .then((fixture: ComponentFixture<any>) => {
-        let query = fixture.debugElement.query(By.directive(WelcomeComponent));
+        let query = fixture.debugElement.query(By.directive(SecretComponent));
         expect(query).toBeTruthy();
         expect(query.componentInstance).toBeTruthy();
       });
@@ -37,10 +37,10 @@ describe('Component: Welcome', () => {
 @Component({
   selector: 'test',
   template: `
-    <app-welcome></app-welcome>
+    <app-secret></app-secret>
   `,
-  directives: [WelcomeComponent]
+  directives: [SecretComponent]
 })
-class WelcomeComponentTestController {
+class SecretComponentTestController {
 }
 
