@@ -1,0 +1,27 @@
+<div class="card-container flex70">
+  <md-card>
+    <!--<img md-card-image [alt]="dog.name" src="https://material.angularjs.org/material2_assets/ngconf/{{dog.name}}.png">-->
+    <md-card-title>Your rooms</md-card-title>
+    <md-card-content class="secondary">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ranking</th>
+            <th>Name</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of rooms">
+            <td><a [routerLink]="['Game', {name:item}]">{{item}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+      Very ipsum such dolor amet wow very divs very content concern, very much develop much spans much layer so so scare such spans such padding many beta very layer much excuse.
+    </md-card-content>
+    <md-card-actions align="end">
+      <button md-button color="primary">SNIFF</button>
+      <button md-button color="primary">WOOF</button>
+    </md-card-actions>
+  </md-card>
+</div>
