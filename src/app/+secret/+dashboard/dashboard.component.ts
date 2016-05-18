@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MdButton} from '@angular2-material/button';
-import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
-import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
-import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
+import { MdButton } from '@angular2-material/button';
+import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
+import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
@@ -12,14 +11,12 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   styleUrls: ['dashboard.component.css'],
   directives: [
     ROUTER_DIRECTIVES,
-    MD_SIDENAV_DIRECTIVES,
     MD_LIST_DIRECTIVES,
     MD_CARD_DIRECTIVES,
     MdButton,
   ],
 })
 export class DashboardComponent implements OnInit {
-
   rooms: Array<string> = [
     "Pippo",
     "Pluto"
@@ -29,5 +26,4 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

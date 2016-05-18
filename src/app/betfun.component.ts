@@ -4,7 +4,6 @@ import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/ro
 import { AuthProviderService } from './auth-provider.service';
 import './user';
 import { SecretComponent } from './+secret';
-
 /**
  * (description)
  * 
@@ -17,7 +16,7 @@ import { SecretComponent } from './+secret';
   templateUrl: 'betfun.component.html',
   styleUrls: ['betfun.component.css'],
   directives: [
-    ROUTER_DIRECTIVES
+    ROUTER_DIRECTIVES,
   ],
   providers: [ROUTER_PROVIDERS, AuthProviderService]
 })
